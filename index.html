@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Favicon -->
+        <link rel="icon" href="./images/favicon.ico" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Music Player</title>
+    </head>
+    <body>
+        <div class="player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Now playing:</h4>
+                    <h2></h2>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div
+                        class="cd-thumb"
+                        style="background-image: url('')"
+                    ></div>
+                </div>
+
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="fa fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa fa-pause icon-pause"></i>
+                        <i class="fa fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa fa-random"></i>
+                    </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="slider_container">
+                    <div class="current-time"></div>
+
+                    <input
+                        id="progress"
+                        class="progress"
+                        type="range"
+                        value="0"
+                        step="1"
+                        min="0"
+                        max="100"
+                    />
+
+                    <div class="total-duration"></div>
+                </div>
+
+                <!-- Use this to play songs -->
+                <audio id="audio" src=""  preload="metadata"></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist"></div>
+            <!-- End playlist -->
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
